@@ -1,0 +1,14 @@
+{
+  "name": "ly-sass",
+  "version": "1.0.1",
+  "description": "Personal preset sass package",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "sass"
+  ],
+  "author": "1042625709@qq.com",
+  "license": "ISC"
+}

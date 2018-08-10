@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+img{
+  display: block;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.hide{
+  display: none !important;
+}
+
+$display: (inline, block, inline-block, flex, inline-flex);
+
+@each $item in $display {
+  .d-#{$item}{
+    display: #{$item} !important;
+  }
+}
+
+.align-center{
+  align-items: center;
+}
+
+.flex-space{
+  justify-content: space-between;
+}
+
+.pos-r{
+  position: relative;
+}
+
+.pos-a{
+  position: absolute;
+}

@@ -1,0 +1,31 @@
+.text-center{
+  text-align: center;
+}
+.text-left{
+  text-align: left;
+}
+.text-right{
+  text-align: right;
+}
+
+.text-underline {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.font-bold{
+  font-weight: bold !important;
+}
+
+.font-normal{
+  font-weight: normal !important;
+}
+
+@for $index from 12 to 40 {
+  .font-#{$index}{
+    font-size: #{$index}px !important;
+  }
+  .lh-#{$index}{
+    line-height: #{$index}px !important;
+  }
+}

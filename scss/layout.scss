@@ -1,0 +1,42 @@
+.pull-left{
+  float: left;
+}
+.pull-right{
+  float: right;
+}
+.pull-center{
+  margin: 0 auto;
+}
+
+.center{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// margin padding setting
+$directions: (l: left, r: right, t: top, b: bottom);
+
+@for $index from 0 to 21 {
+  .p-#{$index} {
+    padding: $index * 5px !important;
+  }
+  .m-#{$index} {
+    margin: $index * 5px !important;
+  }
+  @each $key,$value in $directions {
+    .p#{$key}-#{$index} {
+      padding-#{$value}: $index * 5px !important;
+    }
+    .m#{$key}-#{$index} {
+      margin-#{$value}: $index * 5px !important;
+    }
+  }
+}
+
+@for $index from 0 to 101 {
+  .w-#{$index}{
+    width: #{$index}% !important;
+  }
+}
