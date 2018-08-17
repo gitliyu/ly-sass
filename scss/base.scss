@@ -11,8 +11,15 @@ li {
   list-style: none;
 }
 
-img{
+img {
   display: block;
+}
+
+
+img-responsive {
+  display: block;
+  height: auto;
+  max-width: 100%;
 }
 
 .clearfix:after {

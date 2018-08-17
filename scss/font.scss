@@ -13,6 +13,12 @@
   cursor: pointer;
 }
 
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+
 .font-bold{
   font-weight: bold !important;
 }
@@ -21,7 +27,7 @@
   font-weight: normal !important;
 }
 
-@for $index from 12 to 40 {
+@for $index from 12 through  40 {
   .font-#{$index}{
     font-size: #{$index}px !important;
   }
