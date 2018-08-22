@@ -1,6 +1,6 @@
 {
   "name": "ly-sass",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Personal preset sass package",
   "main": "index.js",
   "scripts": {
@@ -9,6 +9,10 @@
   "keywords": [
     "sass"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gitliyu/ly-sass.git"
+  },
   "author": "1042625709@qq.com",
   "license": "ISC"
 }
