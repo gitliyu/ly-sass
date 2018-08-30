@@ -11,17 +11,19 @@ li {
   list-style: none;
 }
 
+// image
 img {
   display: block;
+  border: none;
 }
 
-
-img-responsive {
+.img-responsive {
   display: block;
   height: auto;
   max-width: 100%;
 }
 
+// 清浮动
 .clearfix:after {
   visibility: hidden;
   display: block;
@@ -31,6 +33,11 @@ img-responsive {
   height: 0;
 }
 
+.clear{
+  clear: both;
+}
+
+// display
 .hide{
   display: none !important;
 }
@@ -51,10 +58,18 @@ $display: (inline, block, inline-block, flex, inline-flex);
   justify-content: space-between;
 }
 
-.pos-r{
-  position: relative;
+$position: (absolute, relative, static);
+
+@each $item in $position {
+  .pos-#{$item}{
+    position: #{$item};
+  }
 }
 
-.pos-a{
-  position: absolute;
+$visibility: (visible, hidden, inherit);
+
+@each $item in $display {
+  .v-#{$item}{
+    visibility: #{$item};
+  }
 }

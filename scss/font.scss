@@ -1,11 +1,10 @@
-.text-center{
-  text-align: center;
-}
-.text-left{
-  text-align: left;
-}
-.text-right{
-  text-align: right;
+// 文本对齐方式
+$alignments: (left, center, right, justify);
+
+@each $item in $alignments {
+  .text-#{$item} {
+    text-align: #{$item};
+  }
 }
 
 .text-underline {
@@ -13,10 +12,19 @@
   cursor: pointer;
 }
 
+// 文本超出隐藏
 .text-ellipsis {
   overflow: hidden;
-  text-overflow:ellipsis;
+  text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+$forms: (cap: capitalize, upper: uppercase, lower: lowercase, none: none);
+
+@each $key,$value in $boxes {
+  .text-#{$key} {
+    text-transform: #{$value};
+  }
 }
 
 .font-bold{

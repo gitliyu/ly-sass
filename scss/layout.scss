@@ -15,10 +15,10 @@
   transform: translate(-50%, -50%);
 }
 
-// margin padding setting
+// 盒模型
 $directions: (l: left, r: right, t: top, b: bottom);
 
-@for $index from 0 to 21 {
+@for $index from 0 through 20 {
   .p-#{$index} {
     padding: $index * 5px !important;
   }
@@ -35,8 +35,26 @@ $directions: (l: left, r: right, t: top, b: bottom);
   }
 }
 
-@for $index from 0 to 101 {
+$boxes: (content: content-box, border: border-box, inherit: inherit, unset: unset);
+
+@each $key,$value in $boxes {
+  .box-#{$key} {
+    box-sizing: #{$value};
+  }
+}
+
+// 宽度
+@for $index from 0 through 100 {
   .w-#{$index}{
     width: #{$index}% !important;
+  }
+}
+
+// 垂直对齐方式
+$alignment: (baseline, sub, super, top, text-top	, middle, bottom, text-bottom	, inherit);
+
+@each $item in $alignment {
+  .ver-#{$item} {
+    vertical-align: #{$item};
   }
 }
