@@ -21,7 +21,7 @@ $alignments: (left, center, right, justify);
 
 $forms: (cap: capitalize, upper: uppercase, lower: lowercase, none: none);
 
-@each $key,$value in $boxes {
+@each $key,$value in $forms {
   .text-#{$key} {
     text-transform: #{$value};
   }
