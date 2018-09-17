@@ -1,4 +1,5 @@
-* {
+// unify the setting of elements's margin and padding for browsers
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   margin: 0;
   padding: 0;
 }
@@ -33,43 +34,43 @@ img {
   height: 0;
 }
 
-.clear{
+.clear {
   clear: both;
 }
 
 // display
-.hide{
+.hide {
   display: none !important;
 }
 
 $display: (inline, block, inline-block, flex, inline-flex);
 
 @each $item in $display {
-  .d-#{$item}{
+  .d-#{$item} {
     display: #{$item} !important;
   }
 }
 
-.align-center{
+.align-center {
   align-items: center;
 }
 
-.flex-space{
+.flex-space {
   justify-content: space-between;
 }
 
 $position: (absolute, relative, static);
 
 @each $item in $position {
-  .pos-#{$item}{
+  .pos-#{$item} {
     position: #{$item};
   }
 }
 
 $visibility: (visible, hidden, inherit);
 
-@each $item in $display {
-  .v-#{$item}{
+@each $item in $visibility {
+  .v-#{$item} {
     visibility: #{$item};
   }
 }
