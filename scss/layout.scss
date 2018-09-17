@@ -15,7 +15,7 @@
   transform: translate(-50%, -50%);
 }
 
-// 盒模型
+// box model
 $directions: (l: left, r: right, t: top, b: bottom);
 
 @for $index from 0 through 20 {
@@ -43,14 +43,14 @@ $boxes: (content: content-box, border: border-box, inherit: inherit, unset: unse
   }
 }
 
-// 宽度
+// width
 @for $index from 0 through 100 {
   .w-#{$index}{
     width: #{$index}% !important;
   }
 }
 
-// 垂直对齐方式
+// vertical-align
 $alignment: (baseline, sub, super, top, text-top	, middle, bottom, text-bottom	, inherit);
 
 @each $item in $alignment {

@@ -1,4 +1,4 @@
-//  占位符
+//  placeholder
 @mixin placeholder($color: #CCC, $font-size: inherit) {
     &::-moz-placeholder {
         color: $color;

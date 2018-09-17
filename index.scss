@@ -1,3 +1,10 @@
+@import 'scss/animation';
 @import 'scss/base';
 @import 'scss/font';
 @import 'scss/layout';
+@import 'scss/normalize';
+
+@import 'scss/mixin/_media';
+@import 'scss/mixin/_placeholder';
+@import 'scss/mixin/_transition';
+@import 'scss/mixin/_triangle';

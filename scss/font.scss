@@ -1,4 +1,4 @@
-// 文本对齐方式
+// text align
 $alignments: (left, center, right, justify);
 
 @each $item in $alignments {
@@ -12,7 +12,6 @@ $alignments: (left, center, right, justify);
   cursor: pointer;
 }
 
-// 文本超出隐藏
 .text-ellipsis {
   overflow: hidden;
   text-overflow: ellipsis;

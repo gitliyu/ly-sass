@@ -10,6 +10,7 @@ npm i ly-sass
 Introduce in main.js 
 ```javascript
 import 'ly-sass/index.scss'
-```
 
-required: `node-sass`  `sass-loader`
+// or
+import 'ly-sass/index.css'
+```
